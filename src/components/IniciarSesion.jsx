@@ -1,10 +1,14 @@
 import "../Estilos/IniciarSesion.css";
+import { Link } from "react-router-dom";
 
 function IniciarSesion() {
   return (
     <div className="contenedor">
       <header className="titulo">
-        <h1>GYMTRACK</h1>
+        <img
+          src="src/imgs/Logo.jpeg"
+          alt="GYMTRACK Logo"
+          className="logo"/>
       </header>
 
       <section className="formulario">
@@ -33,13 +37,18 @@ function IniciarSesion() {
         </div>
 
         <button className="btnIniciarSesion">Ingresar</button>
-      </section>
-        <section>
-            <p>¿No tienes cuenta?</p>
-            
-            <p>Olvidé mi contraseña</p>
+
+        <section className="opciones">
+          <p>
+            ¿No tienes cuenta? <Link to="/registro">Regístrate aquí</Link>
+          </p>
+          <p>
+            <Link to="/recuperar-contrasena">Olvidé mi contraseña</Link>
+          </p>
         </section>
-      <footer>¿Quiénes somos?</footer>
+      </section>
+
+      <footer className="footer">¿Quiénes somos?</footer>
     </div>
   );
 }
