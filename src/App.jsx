@@ -1,14 +1,25 @@
-import { useState } from 'react'
-import Comp1_1 from './Components/Comp1_1'
-import Comp2 from './Components/Comp2';
+import Footeranclado from './Components/Footeranclado'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import InitSesion from './Components/InitSesion';
+import NavBar from './Components/NavBarAnclado';
+import ContentArticle from './Components/Infoprincipal';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <Comp1_1></Comp1_1>
-    <Comp2></Comp2>
+    <NavBar />
+
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/initSesion" element={<InitSesion />}></Route>
+        <Route path='/home' element={<ContentArticle />} />
+      </Routes>
+    </BrowserRouter>
+
+
+    <Footeranclado/>
+
     </>
   )
 }

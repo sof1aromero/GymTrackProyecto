@@ -1,0 +1,23 @@
+.divsection2 {
+    height: 550px;
+    margin-top: 5px;
+    padding: 0 20px;
+}
+
+.divsection2left {
+    width: 50%;
+    padding: 20px;
+}
+
+.divdicsec2right {
+    width: 50%;  
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.divdicsec2right img {
+    width: 80%; /* Ajusta el tamaño de la imagen según necesites */
+    max-width: 300px; /* Define un máximo para evitar imágenes demasiado grandes */
+    height: auto; /* Mantiene proporción */
+}

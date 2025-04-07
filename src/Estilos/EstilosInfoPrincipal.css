@@ -1,0 +1,28 @@
+.footer {
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    margin-top: 5px;
+}
+
+.contact-info {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
