@@ -1,4 +1,4 @@
-import "../Estilos/Registro.css";
+import "../Estilos/RecuperarContrasena.css";
 import { Link } from "react-router-dom";
 
 function RecuperarContrasena() {
@@ -19,14 +19,14 @@ function RecuperarContrasena() {
           <input type="text" id="primerNombre" name="primerNombre" placeholder="Correo electrónico" required />
         </div>
 
-        <button className="btnRegistrar">Confirmar</button>
+        <button className="btnConfirmar">Confirmar</button>
 
         <div className="campo">
           <label htmlFor="codigorecuperar">Código enviado al correo</label>
           <input type="text" id="codigorecuperar" name="codigorecuperar" placeholder="" />
         </div>
 
-        <button className="btnRegistrar">Reestablecer contraseña</button>
+        <button className="btnReestablecer">Reestablecer contraseña</button>
 
         <section className="opciones">
           <p>
