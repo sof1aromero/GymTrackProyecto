@@ -1,4 +1,6 @@
-function NavBarAnclado() {
+import "./estilos/NavBar.css"
+
+export default function NavBar() {
     return (
         <nav className="navsection1">
             <div className="nav-left"> 
@@ -10,11 +12,10 @@ function NavBarAnclado() {
             </div>
 
             <div className="nav-right">
-            <button className="btn">Iniciar Sesion</button>
+            <button className="btn"><a href="/initSesion">Iniciar Sesion</a></button>
             <button className="btn">Crear cuenta</button>
             </div>
         </nav>
     )
 }
 
-export default NavBarAnclado;
