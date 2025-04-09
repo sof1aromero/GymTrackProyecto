@@ -50,7 +50,7 @@ input {
 }
 
 .btnIniciarSesion {
-    background-color: #007bff;
+    background-color: #505050;
     color: white;
     border: none;
     padding: 10px;
@@ -60,10 +60,14 @@ input {
 }
 
 .btnIniciarSesion:hover {
-    background-color: #0056b3;
+    background-color: #272727;
 }
 
 .footer{
     height: 100px;
     margin-top: 20px;
 }
+
+.opciones a {
+    color: rgb(67, 67, 68);
+  }

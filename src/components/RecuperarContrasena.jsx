@@ -1,32 +1,72 @@
-import "../Estilos/RecuperarContrasena.css";
-import { Link } from "react-router-dom";
+import "../estilos/RecuperarContrasena.css";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function RecuperarContrasena() {
+  const [correo, setCorreo] = useState("");
+  const [codigo, setCodigo] = useState("");
+  const navigate = useNavigate();
+
+  const generarCodigo = () => {
+    if (!correo.trim()) {
+      alert("Por favor, ingresa un correo electrónico.");
+      return;
+    }
+
+    const nuevoCodigo = Math.floor(100000 + Math.random() * 900000);
+    setCodigo(nuevoCodigo.toString());
+  };
+
+  const confirmarCodigo = () => {
+    if (!codigo) {
+      alert("Debes generar un código primero.");
+      return;
+    }
+
+    // Si todo está bien, redirige a la pantalla de cambio de contraseña
+    navigate("/cambiar-contrasena");
+  };
+
   return (
     <div className="contenedor">
-      <header className="titulo">
-        <img
-          src="src/imgs/Logo.jpeg"
-          alt="GYMTRACK Logo"
-          className="logo"/>
-      </header>
+
 
       <section className="formulario">
         <h2>Recuperar contraseña</h2>
 
         <div className="campo">
-          <label htmlFor="correorecuperar">Ingresar el correo electrónico con el que se registro</label>
-          <input type="text" id="primerNombre" name="primerNombre" placeholder="Correo electrónico" required />
+          <label htmlFor="correorecuperar">Ingresar el correo electrónico con el que se registró</label>
+          <input
+            type="email"
+            id="correorecuperar"
+            value={correo}
+            onChange={(e) => setCorreo(e.target.value)}
+            placeholder="Correo electrónico"
+            required
+          />
         </div>
 
-        <button className="btnConfirmar">Confirmar</button>
+        <button className="btnConfirmar">Enviar código</button>
 
         <div className="campo">
           <label htmlFor="codigorecuperar">Código enviado al correo</label>
-          <input type="text" id="codigorecuperar" name="codigorecuperar" placeholder="" />
+          <div className="grupo-codigo">
+            <input
+              type="text"
+              id="codigorecuperar"
+              value={codigo}
+              placeholder="Genera un código"
+              readOnly
+            />
+            <button type="button" className="btnGenerar" onClick={generarCodigo}>
+              Generar
+            </button>
+          </div>
         </div>
 
-        <button className="btnReestablecer">Reestablecer contraseña</button>
+        <button className="btnReestablecer" onClick={confirmarCodigo}>
+          Confirmar
+        </button>
 
         <section className="opciones">
           <p>
@@ -34,8 +74,6 @@ function RecuperarContrasena() {
           </p>
         </section>
       </section>
-
-      <footer className="footer">¿Quiénes somos?</footer>
     </div>
   );
 }

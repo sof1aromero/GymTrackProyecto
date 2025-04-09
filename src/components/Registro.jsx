@@ -1,14 +1,11 @@
-import "../Estilos/Registro.css";
+import "../estilos/Registro.css";
 import { Link } from "react-router-dom";
 
 function Registro() {
   return (
     <div className="contenedor">
       <header className="titulo">
-        <img
-          src="src/imgs/Logo.jpeg"
-          alt="GYMTRACK Logo"
-          className="logo"/>
+
       </header>
 
       <section className="formulario">
@@ -77,7 +74,6 @@ function Registro() {
         </section>
       </section>
 
-      <footer className="footer">¿Quiénes somos?</footer>
     </div>
   );
 }

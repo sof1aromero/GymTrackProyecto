@@ -62,7 +62,7 @@
 }
 
 .btnRegistrar {
-    background-color: #007bff;
+    background-color: #505050;
     color: white;
     border: none;
     padding: 10px;
@@ -74,7 +74,7 @@
 }
 
 .btnRegistrar:hover {
-    background-color: #0056b3;
+    background-color: #272727;
 }
 
 .opciones {
