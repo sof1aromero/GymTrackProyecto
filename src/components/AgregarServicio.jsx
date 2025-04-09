@@ -7,7 +7,7 @@ const servicios = [
     { id: 3, titulo: 'Servicio 3', descripcion: 'Gym Boxeo' },
 ];
 
-const Servicios = () => {
+const AgregarServicio = () => {
     return (
         <Container className="py-5 border rounded mt-4">
             <h4 className="text-xl mb-4 font-bold text-center">Elige el servicio que desees!</h4>
@@ -39,4 +39,4 @@ const Servicios = () => {
     );
 };
 
-export default Servicios;
+export default AgregarServicio;

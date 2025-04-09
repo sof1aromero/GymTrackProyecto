@@ -32,7 +32,7 @@ const NavBar = () => {
                 </Navbar.Brand>
 
                 <Nav className="d-flex gap-4 nav-links">
-                    <Link to="/entrenadores" className="fw-semibold text-decoration-underline nav-link mx-3">
+                    <Link to="/mis-servicios" className="fw-semibold text-decoration-underline nav-link mx-3">
                         Mis Servicios
                     </Link>
                     <Link to="/entrenadores" className="fw-semibold nav-link">

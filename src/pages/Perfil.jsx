@@ -1,18 +1,15 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import { FaUser } from "react-icons/fa";
 
 function Perfil() {
     return (
         <div className="container mt-4">
             <div className="card p-4">
-
                 <div className="d-flex align-items-center mb-3">
-                    <img 
-                        src="https://via.placeholder.com/80" 
-                        alt="Avatar" 
-                        className="rounded-circle me-3"
-                        style={{width: "80px", height: "80px"}}
-                    />
+                            <FaUser
+                                size={58}
+                            />
                     <div>
                         <h5>
                             User_name
