@@ -14,17 +14,6 @@ function IniciarSesion() {
       <section className="formulario">
         <h2>Iniciar Sesión</h2>
 
-        <div className="campo">
-          <label htmlFor="tipoDocumento">Tipo de Documento</label>
-          <select id="tipoDocumento" name="tipoDocumento" required>
-            <option value="">Seleccione...</option>
-            <option value="CC">Cédula de Ciudadanía</option>
-            <option value="TI">Tarjeta de Identidad</option>
-            <option value="CE">Cédula de Extranjería</option>
-            <option value="Pasaporte">Pasaporte</option>
-          </select>
-        </div>
-
         <div className="campoDoc">
           <label htmlFor="documento">N° Documento</label>
           <input
