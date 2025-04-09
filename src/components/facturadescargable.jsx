@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
-import "../Estilos/facturadescargable.css";
+import "../estilos/facturadescargable.css";
 
-function FacturaDescargable() {
+function facturadescargable() {
   useEffect(() => {
     const button = document.querySelector(".download-button");
 
@@ -120,4 +120,4 @@ function FacturaDescargable() {
   );
 }
 
-export default FacturaDescargable;
+export default facturadescargable;

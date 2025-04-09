@@ -9,4 +9,16 @@ function App() {
   );
 }
 
+
+import React from 'react';
+import MetodoPago from './components/MetodoPago';
+
+function App() {
+  return (
+    <div className="App">
+      <MetodoPago />
+    </div>
+  );
+}
+
 export default App;
