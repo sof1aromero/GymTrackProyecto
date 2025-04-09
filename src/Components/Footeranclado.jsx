@@ -1,22 +1,25 @@
+import React from "react";
+import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
 import "./../Estilos/FooterAnclado.css";
 
 function Footeranclado() {
 return (
     <>
 
-    <footer className="footer">
-
-        <div className="contact-info">
-            <p><strong>CONTACTANOS:</strong> 3238136445</p>
-            <p>gymtrack123@gmail.com</p>
-        </div>
+    <footer className="footer-container">
+        <p>&copy; 2025 GymTrack. Todos los derechos reservados.</p>
         <div className="social-icons">
-            <img src="ruta-whatsapp-icono" alt="WhatsApp" />
-            <img src="ruta-facebook-icono" alt="Facebook" />
-            <img src="ruta-instagram-icono" alt="Instagram" />
+            <a href="https://wa.me/tu-numero" target="_blank" rel="noreferrer">
+            <FaWhatsapp />
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <FaFacebookF />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <FaInstagram />
+            </a>
         </div>
-
-    </footer>
+        </footer>
 
     </>
 );

@@ -10,9 +10,9 @@ function App() {
     
     <>
       <NavBarAnclado/>
-      {/*<Infoprincipal/>*/}
+      <Infoprincipal/>
       {/*<NotificacionesUsuarios/>*/}
-      <HistorialNotificaciones/>
+      {/*<HistorialNotificaciones/>*/}
       <Footeranclado/>
     </>
   )
