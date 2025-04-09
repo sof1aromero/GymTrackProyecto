@@ -1,6 +1,6 @@
 import Table from 'react-bootstrap/Table';
 
-function CompOne() {
+function DivOne() {
   return (
     <Table striped="columns">
       <thead>
@@ -29,11 +29,11 @@ function CompOne() {
           <td>No pago</td>
           <td>Vencida</td>
         <tr>
-         
+        
         </tr>
       </tbody>
     </Table>
   );
 }
 
-export default CompOne;
+export default DivOne;

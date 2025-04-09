@@ -1,14 +1,14 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css'
-import CompOne from './src/Components/CompOne'
+import DivOne from './src/Components/DivOne'
+import NavBar from './src/Components/NavBar'
 
 function App() {
 
 
   return (
     <>
-    
-    <CompOne/>
+    <NavBar/>
+    <DivOne/>
 
     
     </>

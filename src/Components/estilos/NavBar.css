@@ -1,0 +1,24 @@
+import "./estilos/EstilosNavBar.css"
+
+.navsection1, .divsection2 {
+    background-color: rgb(255, 255, 255);
+    border: solid black 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navsection1 {
+    height: 95px;
+    padding: 0 20px;
+  }
+  
+  .divsection2 {
+     height: auto; 
+     padding: 10px;
+  }
+  
+  .nav-left {
+     color: blue; 
+     font-size: 16px;/
+  }
