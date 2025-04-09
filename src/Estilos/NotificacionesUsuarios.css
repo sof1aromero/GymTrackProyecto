@@ -1,0 +1,93 @@
+.divprincipal {
+    min-height: 500px;
+    border: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divtitulo {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.Titulo {
+    margin: 0;
+}
+
+.divcontenido {
+    border: solid black 1px;
+    width: 95%;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+}
+
+/* Agrupar campos de formulario de manera clara */
+.filtros,
+.mensaje,
+.programacion,
+.archivo,
+.prioridad,
+.historial {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filtros input[type="text"],
+.filtros select,
+.mensaje textarea,
+.programacion input,
+.archivo input,
+.prioridad select {
+    flex: 1;
+    min-width: 200px;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+/* Ajustes para el campo de texto */
+.mensaje {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mensaje textarea {
+    width: 100%;
+    height: 60px;
+}
+
+/* Botón de envío */
+.boton-enviar {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+}
+
+
+.historial {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.historial a {
+    color: purple;
+    font-size: 14px;
+}
+

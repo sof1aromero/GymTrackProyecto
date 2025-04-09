@@ -1,6 +1,6 @@
-import "./../Estilos/EstilosFooterAnclado.css";
+import "./../Estilos/FooterAnclado.css";
 
-function Comp1_1() {
+function Footeranclado() {
 return (
     <>
 
@@ -22,4 +22,4 @@ return (
 );
 }
 
-export default Comp1_1;
+export default Footeranclado;

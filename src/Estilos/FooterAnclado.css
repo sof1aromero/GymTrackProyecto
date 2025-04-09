@@ -1,12 +1,11 @@
 .footer {
-    background-color: aliceblue;
-    border: 1px solid black;
-    padding: 0 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 97%;
     margin-top: 5px;
+
 }
 
 .contact-info {
