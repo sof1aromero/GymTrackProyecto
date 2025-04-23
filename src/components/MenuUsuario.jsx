@@ -30,7 +30,7 @@ const MenuUsuario = () => {
                         <Link to="/pagos" className="dropdown-item">Mis Pagos</Link>
                     </li>
                     <li>
-                        <Link to="/servicios-activos" className="dropdown-item">Mis Servicios</Link>
+                        <Link to="/mis-servicios" className="dropdown-item">Mis Servicios</Link>
                     </li>
                     <li>
                         <Link to="/notificaciones" className="dropdown-item">Notificaciones</Link>
